@@ -29,3 +29,11 @@ The API is built using NextJS API routes and the front-end is built using NextJS
 
 The API itself is functional, but the storage is temporary. The files are stored in the `@/lib/storage.ts` file and are not persisted between server restarts.
 
+## Improvements
+
+There are a few improvements that could be made to this application.
+- Add a proper datastore to persist the images between server restarts.
+- Add a proper authentication system to prevent unauthorized users from uploading images.
+- Add a proper file size limit to prevent users from uploading large files.
+- Add filtering to the gallery to allow users to filter by file type or upload date.
+- Allow user to click on image to view it in a larger format.
