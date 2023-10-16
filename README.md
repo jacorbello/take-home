@@ -1,36 +1,27 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Take-Home Exercise
 
-## Getting Started
+Start time: Oct 16, 10:14 AM
+Completion time: Oct 16, 12:11 PM
 
-First, run the development server:
+## Instructions
 
+Simply run:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm i
+npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Please note, usually `npm dev` would be the correct command for NextJS but the instructions clearly stated that `npm start` should be the application.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Overview
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+This application acts as a simple image upload and display service. It allows users to upload images and view them in a gallery. The search features fuzzy search and will return results based on the image name.
 
-## Learn More
+Hovering over the image presents the user with the file name as well as a delete button. Clicking the delete button will remove the image from the gallery.
 
-To learn more about Next.js, take a look at the following resources:
+The file upload only accepts images and will not allow the user to upload anything else.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The API is built using NextJS API routes and the front-end is built using NextJS and TailwindCSS.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+The API itself is functional, but the storage is temporary. The files are stored in the `@/lib/storage.ts` file and are not persisted between server restarts.
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
