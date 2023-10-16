@@ -3,6 +3,10 @@
 Start time: Oct 16, 10:14 AM
 Completion time: Oct 16, 12:11 PM
 
+## Example
+
+![Example](./sample.png)
+
 ## Instructions
 
 Simply run:
